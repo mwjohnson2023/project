@@ -183,3 +183,7 @@ h1 {
   text-align: center;
   background-color: darkgrey;
 }
+
+#homephoto {
+  size: 100vw;
+}
