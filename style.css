@@ -172,3 +172,14 @@ a {
   text-align: center;
   padding-top: 30px;
 }
+
+p {
+  color: black;
+  padding: 35px;
+  font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+  background-color: darkgrey;
+}
