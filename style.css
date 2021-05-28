@@ -184,6 +184,13 @@ h1 {
   background-color: darkgrey;
 }
 
-#homephoto {
-  size: 100vw;
+h2 {
+  text-align: center;
+  font-size: 13px;
+}
+
+.linkedinphoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
