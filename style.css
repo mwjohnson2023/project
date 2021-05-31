@@ -190,4 +190,5 @@ iframe {
   padding: 20px;
   margin: 0 auto;
   display: block;
+  align-self: center;
 }
