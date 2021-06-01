@@ -1,4 +1,4 @@
-const scrollElements = document.querySelectorAll(".scroll-element");
+var scrollElements = document.querySelectorAll(".scroll-element");
 
 const elementInView = (el, dividend = 1) => {
     const elementTop = el.getBoundingClientRect().top;

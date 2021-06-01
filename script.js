@@ -1,3 +1,15 @@
+const showText = () => {
+	console.log("testing click");
+    var x = document.querySelector('#credittext');
+    if (x.style.display == "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  };
+
+document.querySelector("#btn").onclick = showText;
+
 class VerticalMouseDrivenCarousel {
 	constructor(options = {}) {
 		const _defaults = {
@@ -16,7 +28,6 @@ class VerticalMouseDrivenCarousel {
 		this.bgImgController();
 	}
 
-	//region getters
 	getBgImgs() {
 		return document.querySelectorAll(this.defaults.bgImg);
 	}
@@ -125,57 +136,58 @@ class VerticalMouseDrivenCarousel {
 			}
 		}
 	}
-}
+};
 
 new VerticalMouseDrivenCarousel();
 
-const scrollElements = document.querySelectorAll(".scroll-element");
+// const scrollElements = document.querySelectorAll(".scroll-element");
 
-const elementInView = (el, dividend = 1) => {
-    const elementTop = el.getBoundingClientRect().top;
-    return (
-        elementTop <=
-        (window.innerHeight || document.documentElement.clientHeight) / dividend
-    );
-};
+// const elementInView = (el, dividend = 1) => {
+//     const elementTop = el.getBoundingClientRect().top;
+//     return (
+//         elementTop <=
+//         (window.innerHeight || document.documentElement.clientHeight) / dividend
+//     );
+// };
 
-const elementOutofView = (el) => {
-    const elementTop = el.getBoundingClientRect().top;
-    return (
-        elementTop > (window.innerHeight || document.documentElement.clientHeight)
-    );
-};
+// const elementOutofView = (el) => {
+//     const elementTop = el.getBoundingClientRect().top;
+//     return (
+//         elementTop > (window.innerHeight || document.documentElement.clientHeight)
+//     );
+// };
 
-const displayScrollElement = (element) => {
-    element.classList.add("scrolled");
-};
+// const displayScrollElement = (element) => {
+//     element.classList.add("scrolled");
+// };
 
-const hideScrollElement = (element) => {
-    element.classList.remove("scrolled");
-};
+// const hideScrollElement = (element) => {
+//     element.classList.remove("scrolled");
+// };
 
-const handleScrollAnimation = () => {
-    scrollElements.forEach((el) => {
-        if (elementInView(el, 1.25)) {
-            displayScrollElement(el);
-        } 
-        else if (elementOutofView(el)) {
-            hideScrollElement(el)
-        }
-    })
-}
+// const handleScrollAnimation = () => {
+//     scrollElements.forEach((el) => {
+//         if (elementInView(el, 1.25)) {
+//             displayScrollElement(el);
+//         } 
+//         else if (elementOutofView(el)) {
+//             hideScrollElement(el)
+//         }
+//     })
+// };
 
-window.addEventListener("scroll", handleScrollAnimation);
+// window.addEventListener("scroll", handleScrollAnimation);
 
 
-const showText = (ev) => {
-	console.log('clicked');
-    var x = document.querySelector('#credittext');
-    if (x.style.display == "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
+// const showText = () => {
+// 	console.log("testing click");
+//     var x = document.querySelector('#credittext');
+//     if (x.style.display == "none") {
+//       x.style.display = "block";
+//     } else {
+//       x.style.display = "none";
+//     }
+//   };
 
-document.querySelector('#credits').onclick = showText;
+// document.querySelector("#btn").onclick = showText;
+// console.log("test");
