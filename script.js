@@ -166,3 +166,16 @@ const handleScrollAnimation = () => {
 }
 
 window.addEventListener("scroll", handleScrollAnimation);
+
+
+const showText = (ev) => {
+	console.log('clicked');
+    var x = document.querySelector('#credittext');
+    if (x.style.display == "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+document.querySelector('#credits').onclick = showText;

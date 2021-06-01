@@ -192,3 +192,28 @@ iframe {
   display: block;
   align-self: center;
 }
+
+button {
+  font-size: 25px;
+  background-color: lightgrey;
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+  align-self: center;
+  border-color: lightgrey;
+  border-right: lightgrey;
+  border-bottom: lightgrey;
+}
+
+#credittext {
+  font-size: 25px;
+  font-color: black;
+  text-align: center;
+  display: none;
+  padding-bottom: 25px;
+}
+
+/* #insp {
+  font-size: 25px;
+  padding:35px;
+} */

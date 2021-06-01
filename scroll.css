@@ -46,3 +46,8 @@
         transform: translateX(calc(50vw - 50px));
     }
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
