@@ -1,3 +1,6 @@
+
+
+
 var scrollElements = document.querySelectorAll(".scroll-element");
 
 const elementInView = (el, dividend = 1) => {
